@@ -11,8 +11,6 @@ import { AreaComponent } from './area/area.component';
 import { CardComponent } from './card/card.component';
 import { PieChartComponent } from '../dashboard/pie-chart/pie-chart.component';
 
-
-
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -33,7 +31,8 @@ import { PieChartComponent } from '../dashboard/pie-chart/pie-chart.component';
     FooterComponent,
     SidebarComponent,
     AreaComponent,
-    CardComponent
+    CardComponent,
+    PieChartComponent
   ]
 })
 export class SharedModule { }

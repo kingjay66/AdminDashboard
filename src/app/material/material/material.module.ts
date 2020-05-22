@@ -9,6 +9,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatTableModule } from '@angular/material/table';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
@@ -22,6 +24,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatMenuModule,
     MatListModule,
     MatCardModule,
+    MatPaginatorModule,
+    MatTableModule,
     FlexLayoutModule
   ],
 
@@ -34,6 +38,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatMenuModule,
     MatListModule,
     MatCardModule,
+    MatPaginatorModule,
+    MatTableModule,
     FlexLayoutModule
   ]
 })

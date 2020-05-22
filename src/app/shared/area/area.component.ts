@@ -5,30 +5,29 @@ import HC_exporting from 'highcharts/modules/exporting';
 @Component({
   selector: 'app-area',
   templateUrl: './area.component.html',
-  styleUrls: ['./area.component.css']
+  styleUrls: ['./area.component.css'],
 })
 export class AreaComponent implements OnInit {
-
-  @Input() data:any [] = [];
+  @Input() data: any[] = [];
   Highcharts = Highcharts;
   chartOptions: {};
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
     this.chartOptions = {
       chart: {
-      type: 'area'
+        type: 'area',
       },
       title: {
-          text: 'Random Data (Demo Purpose)'
+        text: 'Random Data (Demo Purpose)',
       },
       subtitle: {
-          text: 'By - Sunny Vakil'
+        text: 'By - Sunny Vakil',
       },
       tooltip: {
-          split: true,
-          valueSuffix: ' millions'
+        split: true,
+        valueSuffix: ' millions',
       },
       credits: {
         enabled: false,
@@ -36,17 +35,13 @@ export class AreaComponent implements OnInit {
       exporting: {
         enabled: true,
       },
-      series: this.data
-  };
-  
-  HC_exporting(Highcharts);
-  
-  setTimeout(() => {
-    window.dispatchEvent(
-      new Event('resize')
-    );
-  }, 300);
- }
-  
+      series: this.data,
+    };
 
+    HC_exporting(Highcharts);
+
+    setTimeout(() => {
+      window.dispatchEvent(new Event('resize'));
+    }, 300);
+  }
 }

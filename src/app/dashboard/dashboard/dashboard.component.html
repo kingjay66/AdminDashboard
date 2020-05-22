@@ -1,5 +1,5 @@
 <div>
-  <app-area [data]="bigcharts"></app-area>
+  <app-area [data]="bigChart"></app-area>
 </div>
 
 <mat-divider></mat-divider>
@@ -7,23 +7,23 @@
 
 <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" class="stats-cards">
   <mat-card fxFlex="25">
-      <app-card label="New Users" total="12k" percentage="50" [data]="cards"></app-card>
+      <app-card label="New Users" total="12k" percentage="55" [data]="card"></app-card>
   </mat-card>
   <mat-card fxFlex="25">
-      <app-card label="Users retention" total="10k" percentage="40" [data]="cards"></app-card>
+      <app-card label="Users retention" total="10k" percentage="38" [data]="card"></app-card>
   </mat-card>
   <mat-card fxFlex="25">
-      <app-card label="Users engagement" total="8k" percentage="30" [data]="cards"></app-card>
+      <app-card label="Users engagement" total="8k" percentage="44" [data]="card"></app-card>
   </mat-card>
   <mat-card fxFlex="25">
-      <app-card label="Referral" total="6k" percentage="20" [data]="cards"></app-card>
+      <app-card label="Referral" total="6k" percentage="27" [data]="card"></app-card>
   </mat-card>
 </div>
 
 <mat-divider></mat-divider>
 
 <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
-  <div fxFlex="60%">
+  <div fxFlex="60">
       <div class="mat-elevation-z8">
           <table mat-table [dataSource]="dataSource">
 
@@ -59,7 +59,7 @@
       </div>
 
   </div>
-  <div fxFlex="40%">
-      <app-pie [data]="pieChart"></app-pie>
+  <div fxFlex="40">
+      <app-pie-chart [data]="pieChart"></app-pie-chart>
   </div>
 </div>

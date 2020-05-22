@@ -3,7 +3,7 @@ import * as Highcharts from 'highcharts';
 import HC_exporting from 'highcharts/modules/exporting';
 
 @Component({
-  selector: 'app-pie',
+  selector: 'app-pie-chart',
   templateUrl: './pie-chart.component.html',
   styleUrls: ['./pie-chart.component.css']
 })
@@ -25,7 +25,7 @@ export class PieChartComponent implements OnInit {
         type: 'pie'
       },
       title: {
-        text: 'Random Data'
+        text: 'RANDOM DATA'
       },
       tooltip: {
         pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
